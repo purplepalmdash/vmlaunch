@@ -1,0 +1,8 @@
+vmlauncher.py usr/bin
+revival_script.py usr/bin
+vmlauncher.desktop etc/xdg/autostart
+vmlauncher.desktop usr/share/applications
+images/vmlauncher.png usr/share/pixmaps
+images usr/share/vmlauncher
+locale/zh_CN/LC_MESSAGES/vmlauncher.mo usr/share/locale/zh_CN/LC_MESSAGES
+READMECN.md usr/share/doc/vmlauncher

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=VM Launcher
+Exec=/usr/bin/python3 /usr/bin/vmlauncher.py
+Terminal=false
+Icon=/usr/share/pixmaps/vmlauncher.png

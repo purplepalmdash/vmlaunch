@@ -1,0 +1,28 @@
+[Unit]
+Description=VM Launcher Kiosk Application
+After=graphical.target
+
+[Service]
+# IMPORTANT: 
+# Running a GUI application as root is not recommended for security reasons.
+# For a production setup, create a dedicated user, move the code to that user's home directory,
+# and change the User and Group fields below to that dedicated user.
+User=root
+Group=root
+
+Type=simple
+
+# The application needs to know which display to connect to and have the key
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/root/.Xauthority"
+
+# The full path to the python interpreter and your script
+ExecStart=/usr/bin/python3 /root/Code/vmlaunch/vmlauncher.py
+
+# Restart the service if it crashes
+Restart=always
+RestartSec=5s
+
+[Install]
+# This tells systemd to start this service as part of the graphical target
+WantedBy=graphical.target

@@ -31,5 +31,5 @@ Key Features:
 更多详细信息:    
 Detailed info:   
 
-中文说明: READMECN.md      
-英文说明: READMEEN.md     
+中文说明: [READMECN.md](READMEEN.md)      
+英文说明: [READMEEN.md](READMEEN.md)     
